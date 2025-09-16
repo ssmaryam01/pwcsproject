@@ -86,7 +86,7 @@
         .best-seller{
             display: grid;
             gap: 20px;
-            grid: auto / auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto;
         }
         
         .name-product{
@@ -115,6 +115,7 @@
 
         .detail-product{
             display: flex;
+            flex-direction: row;
             margin-top: 2%;
         }
 
@@ -148,4 +149,26 @@
             background-color: white;
             color: rgb(255, 72, 6);
             cursor: pointer;
+        }
+
+        @media screen and (max-width: 500px){
+            .container{
+                width: 70%;
+            }
+            
+            .best-seller{
+                grid-template-columns: auto auto;
+            }
+
+            .detail-product{
+                flex-direction: column;
+            }
+
+            .detail-product .img-product{
+                width: 100%;
+            }
+
+            .detail-product .desc-product{
+                width: 100%;
+            }
         }
