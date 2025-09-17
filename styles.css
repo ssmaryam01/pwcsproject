@@ -38,6 +38,18 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding: 8px;
         }
+
+
+        .nav .nav-link{
+            display: flex;
+            justify-content: space-between;
+        }
+        /* .nav ul li{
+            display: inline-block;
+            padding: 8px;
+            margin-left: 20px;
+        } */
+
         .nav ul li:hover{
             color: rgb(250, 59, 91);
             background-color: rgb(250, 232, 235);
@@ -193,13 +205,17 @@
                 display: flex;
             }
 
-            .nav ul{
+            .nav .nav-link{
                 display: none;
             }
 
-            #nav-toggle:checked + label + ul{
+            #nav-toggle:checked + label + .nav-link{
+                display: flex;
+                flex-direction: column;
+                ul{
                 display: flex;
                 flex-direction: column;
                 margin-left: -5;
+                }
             }
         }
