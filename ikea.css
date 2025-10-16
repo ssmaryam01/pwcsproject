@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html body{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.contain1{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.semua1{
+    display: flex;
+    justify-content: center;
+}
+.semua1 .utama1{
+        padding-top: 1%;
+    width: 80%;
+}
+.container1{
+    width: 70%;
+    padding-right: 10.5%;
+}
+.container1 .text1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    /* margin-left: 100px; */
+}
+.container1 .text1 ul{
+    list-style: none;
+}
+.text1 ul li{
+    display: inline-block;
+    font-size: 12px;
+    gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.contain2{
+    padding-top: 2%;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0.7%;
+}
+
+.contain2 .container2 .content2{
+    display: flex;
+    padding-right: 16%;
+    justify-content: center;
+}
+.container2 .burger{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
+.container2 .burger .line{
+    width: 20px;
+    height: 2px;
+    background-color:  black;
+    margin-top: 4px;
+}
+.container2 .img2 img{
+    margin-right: 2%;
+    width: 100%;
+    height: 40px;
+}
+.cari{
+    padding-right: 2%;
+    width: 1000px;
+    height: 50px;
+    margin-left: 2%;
+    margin-right: 1%;
+    border: none;
+    background-color: rgba(182, 175, 175, 0.233);
+    border-radius: 20px;
+}
+
+.container2 .img3{
+    padding: 1%;
+}
+
+.contain3 .container3{
+    /* text-align: center; */
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.container3 .text3 ul{
+    list-style: none;
+}
+.container3 .text3 ul li{
+    display: inline-block;
+    gap: 12px;
+}
+.contain4{
+    width: 100%;
+}
+.contain4 .container4{
+    padding-top: 3.5%;
+}
+.container4 .text4 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    /* margin-right: 24%; */
+    /* text-align: center; */
+    margin-bottom: 50px;
+}
+.container4 .text4 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 70%; */
+    font-size: 12px;
+    /* margin-left: 10.6%; */
+    margin-bottom: 50px;
+}
+.container4 img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* margin-left: 10.6%; */
+    margin-bottom: 50px;
+}   
+.container4 h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    /* margin-left: 7.5%; */
+    margin-bottom: 30px;
+    border-bottom: 1px solid grey;
+}
+.produk{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 3 foto per baris */
+  gap: 25px; /* jarak antar foto */
+  max-width: 500px;
+}
+.produk img{
+  width: 233px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(194, 188, 188);
+}
+.produk2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    max-width: 500px;
+    padding-top: 1%z;
+}
+.produk2 img{
+    width: 233px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(194, 188, 188);
+}
+.semua{
+    display: flex;
+    justify-content: center;
+}
+.semua .utama{
+    padding-top: 1%;
+    width: 80%;
+}

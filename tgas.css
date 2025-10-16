@@ -7,6 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .header{
@@ -17,7 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    height: 30px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 }
 
 .nav ul{
@@ -29,7 +30,7 @@ body{
 .nav  ul{
     margin-right: 40px;
     list-style: none;
-    display: flex; 
+    display: inline-block; 
     align-items: center;
 }
 .nav ul li{
@@ -89,19 +90,23 @@ body{
 .contain{
     background-image:linear-gradient(to top,rgb(219, 212, 186), rgb(172, 128, 78));
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contain h5{
     text-align: center;
-    padding-top: 3%;
+    margin-bottom: 20px;
 }
 
  .contain .photo{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-top: 3%;
 }
 
 .photo img{
@@ -109,7 +114,7 @@ body{
     height: 60px;
 }
 
-.contain .photo2{
+/* .contain .photo2{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
@@ -120,7 +125,7 @@ body{
 .photo2 img{
     width: 100px;
     height: 60px;
-}
+} */
 
 .contain2{
     display: flex;
@@ -199,7 +204,7 @@ body{
     resize: none;
 }
 .container4 input{
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgba(208, 99, 117, 0);
@@ -218,28 +223,28 @@ body{
 }
 
 .contain5{
-display: flex;
-justify-content: center;
-background-image: linear-gradient(to bottom, rgb(172, 128, 78), cornsilk);
-height: 80px;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(172, 128, 78), cornsilk);
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .contain5 .container5{
-    width: 50%;
+    padding: 40px 40px 3% 40px;
+    max-width: 600px;
 }
 
 .text5{
-    padding-top: 4%;
-}
-.contain5 .text5{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 8px;
     columns: 2;
-    column-gap: 120px;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center; 
 }
+
 
 .footer{
     text-align: center;
@@ -247,4 +252,10 @@ height: 80px;
     color: burlywood;
     background-color: cornsilk;
     padding: 3%;
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        /* width: 100%; */
+    }
 }
